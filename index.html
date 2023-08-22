@@ -5,25 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-      <div class="side-image">
-        <footer>
-          Photo by <a href="https://unsplash.com/@aboodi_vm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">aboodi vesakaran</a> on <a href="https://unsplash.com/photos/a-tall-building-with-balconies-and-plants-on-the-balconies-IhX81VU7yAA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </footer>
-      </div>  
-      <div class="sign-up-form">
-      <header>
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>You know you want to.</p>
-      </header>
-      <form action="" method="get">
-        <p>Lets do this!</p>
-      </form>
-      <footer>
-        <button type="submit">Create Account</button>
-      </footer>
+  <div class="background">
+    <div class="logo-title">
+      <img src="travel_explore.svg" alt="">
+      <h1>ODIN</h1>
     </div>
+    <p class="photo-credit">Photo by <a href="https://unsplash.com/@aboodi_vm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">aboodi vesakaran</a> on <a href="https://unsplash.com/photos/a-tall-building-with-balconies-and-plants-on-the-balconies-IhX81VU7yAA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+  </div>
+
+  <div>
+    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>You know you want to.</p>
+    <form action="" method="get">
+      <p>Lets do this!</p>
+      <label for="first_name">FIRST NAME</label>
+      <input type="text" name="first_name" id="first_name" required>
+      <label for="last_name">LAST NAME</label>
+      <input type="text" name="last_name" id="last_name" required>
+      <label for="email">EMAIL</label>
+      <input type="email" name="email" id="email" required>
+      <label for="phone">PHONE NUMBER</label>
+      <input type="tel" name="phone" id="phone" required>
+      <label for="password">PASSWORD</label>
+      <input type="password" name="password" id="password" required>
+      <label for="confirm_password">CONFIRM PASSWORD</label>
+      <input type="password" name="confirm_password" id="confirm_password" required>
+      <button type="submit">Create Account</button>
+      <p>Already have an account? Log in</p>
+    </form>
   </div>
 </body>
 </html>
