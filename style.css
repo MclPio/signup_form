@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+header, footer {
+  background-color: rgb(221, 221, 221);
+}
+
+form {
+  background-color: whitesmoke;
+}
+
+.background {
+
+}
+
+.side-image {
+  background-image: url("aboodi.jpg");
+  width: 40vw;
+  height: 100px;
+}
