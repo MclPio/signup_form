@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;400&family=Playfair+Display&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -349,7 +351,7 @@ template {
 }
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Serif', serif;
   padding: 0;
   margin: 0;
 }
@@ -358,7 +360,7 @@ template {
   background: linear-gradient(transparent, 90%, black), url(aboodi.jpg);
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%;
+  width: auto;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -367,16 +369,98 @@ template {
   gap: 60%;
 }
 
+div .logo-title {
+  display: flex;
+  align-items: center;
+  background-color: rgba(12, 12, 12, 0.75);
+  width: calc(100vw - 15px);
+  justify-content: center;
+}
+
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .photo-credit {
   position: relative;
-  color: white;
+  color: #cb0e40;
+  font-size: 0.75em;
 }
 
 a {
   color: inherit;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  width: 10rem;
+}
+
+.logo-title h1 {
+  color: #cb0e40;
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;;
+}
+
+ion-icon {
+  color: #cb0e40;
+  font-size: 3rem;
+}
+
+.pre-form {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+body {
+  background-color: #ececec;
+}
+
+div .form-column1 > div, div .form-column2 > div{
+  margin-bottom: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 5px;
+  font: bold 1rem 'Noto Serif';
+  border: 2px solid #333;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background: #cb0e40;
+  color: #fff;
+}
+
+.login-sentence {
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+}
+
+.login-sentence > a {
+  color: #cb0e40;
+  text-decoration: none;
 }
