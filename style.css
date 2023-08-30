@@ -507,4 +507,13 @@ body {
     align-items: flex-start;
     margin-left: 4rem;
   }
+
+  input {
+    width: 14rem;
+    padding: 0.2rem;
+  }
+
+  * {
+    font-size: 1vw
+  }
 }
