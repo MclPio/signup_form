@@ -516,4 +516,8 @@ body {
   * {
     font-size: 1vw
   }
+
+  html body div .photo-credit a {
+    font-size: 0.75rem;
+  }
 }
