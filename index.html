@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 <body>
   <div class="background">
@@ -20,7 +21,7 @@
 
   <div>
     <p class="pre-form">Welcome to Winter Rose Haven, where timeless elegance meets modern comfort. Discover a sanctuary of luxury living amidst the vibrant allure of nature. Now, tell us a bit about yourself so we can help you find your perfect home.</p>
-    <form action="" method="get" id="contact-info">
+    <form action="" method="get" id="contact-info" onsubmit="return validateForm()">
       <div class="form-column1">
         <div class="first_name">
           <label for="first_name">FIRST NAME</label>
@@ -50,10 +51,12 @@
           <input type="password" name="confirm_password" id="confirm_password" required>
         </div>
       </div>
-
     </form>
-    <button type="submit" form="contact-info" value="Update">Create Account</button>
-    <p class="login-sentence">Already have an account? <a href="">Login</a></p>
+    <div class="below-form">
+      <span id="message"></span>
+      <button type="submit" form="contact-info" value="Update">Create Account</button>
+      <p class="login-sentence">Already have an account? <a href="">Login</a></p>
+    </div>
   </div>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
