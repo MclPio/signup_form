@@ -24,7 +24,7 @@
       <div class="form-column1">
         <div class="first_name">
           <label for="first_name">FIRST NAME</label>
-          <input type="text" name="first_name" id="first_name" required>
+          <input type="text" name="first_name" id="first_name" required maxlength="50">
         </div>
         <div class="email">
           <label for="email">EMAIL</label>
@@ -39,11 +39,11 @@
       <div class="form-column2">
         <div class="last_name">
           <label for="last_name">LAST NAME</label>
-          <input type="text" name="last_name" id="last_name" required>
+          <input type="text" name="last_name" id="last_name" required maxlength="50">
         </div>
         <div class="phone">
           <label for="phone">PHONE NUMBER</label>
-          <input type="tel" name="phone" id="phone" required>
+          <input type="tel" name="phone" id="phone" required pattern="^\d{3}(?:-?\d{3})(?:-?\d{4})$" placeholder="555-123-1337">
         </div>
         <div class="confirm_password">
           <label for="confirm_password">CONFIRM PASSWORD</label>

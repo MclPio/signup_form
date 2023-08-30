@@ -464,3 +464,10 @@ button:focus {
   color: #cb0e40;
   text-decoration: none;
 }
+
+html body div form input:focus,
+html body div form input:hover {
+  border-color: #cb0e40;
+  border-style: solid;
+  outline: none;
+}
