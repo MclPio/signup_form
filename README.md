@@ -1,1 +1,2 @@
 # signup_form
+Explore my GitHub repo featuring a creative sign-up form project. Demonstrating HTML, CSS, and JavaScript skills, the project includes a background image, custom fonts, and design considerations. Features: responsive at any width, simple javascript password validation.
