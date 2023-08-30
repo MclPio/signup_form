@@ -377,11 +377,6 @@ div .logo-title {
   justify-content: center;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 .photo-credit {
   position: relative;
   color: #cb0e40;
@@ -440,7 +435,8 @@ button {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  padding: 5px;
+  padding: 10px;
+  padding-inline: 30px;
   font: bold 1rem 'Noto Serif';
   border: 2px solid #333;
   border-radius: 5px;
@@ -483,6 +479,32 @@ span {
   align-items: center;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 700px) {
-  
+  html body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  html body div .background {
+    width: 400px;
+    background-size: 10px;
+  }
+
+  div .logo-title { 
+    width: calc(40vw - 15px);;
+  }
+
+  .pre-form {
+    margin-top: 15vh;
+  }
+
+  .below-form {
+    align-items: flex-start;
+    margin-left: 4rem;
+  }
 }
